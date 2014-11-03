@@ -1,0 +1,65 @@
+.body-div {
+  position: relative;
+  background-color: ${bg_color};
+  width: 768px;
+  height: 984px;
+}
+
+img.button-img {
+  position: absolute;
+}
+
+img.close-button {
+  top: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  display: none;
+}
+
+img.code-button {
+  top: 28px;
+  right: 98px;
+  width: 35px;
+  height: 35px;
+}
+
+h1, h2, button {
+  color: ${text_color};
+}
+
+h1 {
+  margin-top: 0px;
+  padding: 36px 0 20px 20px;
+}
+
+div#imageDiv {
+  margin: 0 auto;
+  width: 728px;
+  height: 774px;
+}
+
+div#imageDiv.image-1 {
+  background: url(${image_1});
+}
+
+div#imageDiv.image-2 {
+  background: url(${image_2});
+}
+
+div#imageDiv.image-3 {
+  background: url(${image_3});
+}
+
+h2 {
+  //text-align: center;
+  //margin-right: 20px;
+  margin-left: 20px;
+}
+
+button {
+  width: 150px;
+  margin-left: 13px;
+  background: ${button_color};
+  border: ${button_color};
+}
