@@ -11,7 +11,7 @@ $('.code-button').on('click', function() {
   else {
     imageCount = imageCount + 1;
   }
-  $('#imageDiv').addClass('image-' + nextImageId).removeClass('image-' + currentImageId)
+  $('.image-div').addClass('image-' + nextImageId).removeClass('image-' + currentImageId)
   
   return false;
 })
@@ -25,6 +25,7 @@ BL_INTERNAL.listenForNative('IMAGE_CAPTURED', function() {
   var d = new Date();
   dateString = d.getMonth() + '/' + d.getDate() + '/' + d.getFullYear() + ' ' + 
   formatAMPM(d);
+  $('.verified-date').text(dateString);
 })
 
 function formatAMPM(date) {

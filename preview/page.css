@@ -33,21 +33,21 @@ h1 {
   padding: 36px 0 20px 20px;
 }
 
-div#imageDiv {
+div.image-div {
   margin: 0 auto;
   width: 728px;
   height: 774px;
 }
 
-div#imageDiv.image-1 {
+div.image-div.image-1 {
   background: url(${image_1});
 }
 
-div#imageDiv.image-2 {
+div.image-div.image-2 {
   background: url(${image_2});
 }
 
-div#imageDiv.image-3 {
+div.image-div.image-3 {
   background: url(${image_3});
 }
 
@@ -62,4 +62,5 @@ button {
   margin-left: 13px;
   background: ${button_color};
   border: ${button_color};
+  z-index: 2000;
 }
