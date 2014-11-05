@@ -1,6 +1,10 @@
 var imageCount = 1;
 
-$('.code-button').on('click', function() {
+var jsNamespace = BL.getJavascriptNamespace(APP.appId);
+
+$(jsNamespace + '.planogram-images').carousel()
+
+$('.next-button').on('click', function() {
   var currentImageId = imageCount;
   var nextImageId = imageCount + 1;
   
